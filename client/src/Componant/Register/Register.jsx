@@ -53,6 +53,7 @@ const Register = () => {
             duration: 4000,
             isClosable: true,
           });
+          navigate("/login")
         })
         .catch((err) => {
             console.log("err")
@@ -154,7 +155,7 @@ const Register = () => {
                 Already a user?{" "}
                 <Link
              
-                  onClick={() => navigate("/login", { replace: true })}
+                  onClick={() => navigate("/login")}
                 >
                   Login
                 </Link>

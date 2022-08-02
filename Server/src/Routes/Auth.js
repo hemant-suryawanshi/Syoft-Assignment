@@ -8,7 +8,7 @@ const {
 } = require("../Validator/validator");
 const router = express.Router();
 
-router.post("/signup", validateSignupRequest,  signup);
-router.post("/signin", validateSigninRequest, signin);
+router.post("/signup", validateSignupRequest, isRequestValidated, signup);
+router.post("/signin", validateSigninRequest, isRequestValidated, signin);
 
 module.exports = router;
